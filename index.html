@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section class="center" data-background-image="images/blockchain-background.jpg" >
+					<h1>Blockchain</h1>
+				</section>
+				
+				<section>
+					<section>
+							<h4>Empecemos con un ejemplo</h4>
+					</section>
+					<section>
+						<p><img src="images/Profes/rony-millones_2.png" alt="crypto-shared-key"></p>
+						<h5>Rony tiene millones</h5>
+					</section>
+					<section>
+						<p><img src="images/Profes/rony-gaston_3.png" alt="crypto-shared-key"></p>
+						<h5>Y desea hacerle una transaccion a Gaston de $1000</h5>
+					</section>
+					<section>
+							<p><img src="images/Profes/rony-gaston_5.png" alt="crypto-shared-key"></p>
+							<h5>lo normal es que la operación se realizase a través de un banco. 
+						Ese banco actúa como intermediario de esa y otras muchas transacciones, 
+						centralizando de forma efectiva el movimiento de capital de un lado a otro.</h5>
+					</section>
+					<section>
+							<p><img src="images/Profes/rony-gaston_6.png" alt="crypto-shared-key"></p>
+							<h5>Ambos dependen de esos bancos y de su forma de hacer las cosas para 
+						completar esa transacción. Están sujetos a sus condiciones 
+						(y a sus comisiones, por supuesto).</h5>
+					</section>
+					<section> 
+							<h5>Las cadenas de bloques (blockchain), es quien, básicamente elimina a los intermediarios,
+						 descentralizando toda la gestión. El control del proceso es de los usuarios, no de los bancos.</h5>
+					</section>
+				</section>
+
+				<section data-background-image="images/blockchain-background.jpg">
+					<section>
+						<h1>¿Qué es blockchain?</h1>
+					</section>
+					<section data-markdown>
+							- Base de datos decentralizada
+							- Datos confiables
+					</section>
+					<section data-markdown>
+						Cadenas de bloques(acontesimientos) compartidos colaborativamente entre muchas partes.
+					</section>
+					<section data-markdown>
+						Las cadenas son actualizadas por concenso general
+					</section>
+					<section data-markdown>
+						 Una vez actualizada esta no puede ser modificada
+					</section>
+				</section>
+
+				<section>
+					<section>
+						Volvamos al ejemplo
+					</section>
+					<section>
+						<p><img src="images/Profes/rony-millones.png" alt="crypto-shared-key"></p>
+						<h5>Rony tiene millones</h5>
+					</section>
+					<section>
+						<p><img src="images/Profes/rony-gaston.png" alt="crypto-shared-key"></p>
+						<h5>Y desea hacerle una transaccion a Gaston de $1000</h5>	
+					</section>
+					<section>
+						<p><img src="images/Profes/bloque.jpg" alt="crypto-shared-key"></p>
+						<h5>La transaccion se representa en la red como un bloque</h5>
+					</section>
+					<section>
+							<p><img src="images/Profes/red-1.png" width=50%  "crypto-shared-key"></p>
+							<h5>El bloque se transmite a todas las partes de la red</h5>
+					</section>
+					<section>
+							<p><img src="images/Profes/red-2.png" width=50%  "crypto-shared-key"></p>
+							<h5>El bloque se transmite a todas las partes de la red</h5>
+					</section>
+					<section>
+						<p><img src="images/Profes/red-3.png" width=50%  "crypto-shared-key"></p>
+						Los que estan en la red aprueban que la transaccion es válida</h5>
+					</section>
+					<section>
+							<p><img src="images/Profes/chain.png"  "crypto-shared-key"></p>
+							<h5>El bloque entonces puede añadirse a la cadena, lo cual proporciaina un registro indeleble y transparente sobre las transacciones</h5>
+					</section>
+					<section>
+						<p><img src="images/Profes/rony-gaston_2.png" "crypto-shared-key"></p>
+						<h5>Los $1000 se mueven de Rony a Gaston</h5>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
